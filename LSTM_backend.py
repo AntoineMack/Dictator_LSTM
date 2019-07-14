@@ -19,8 +19,8 @@ from keras.utils import np_utils
 from load_lstm import *
 from setup import *
 
-# global loaded_model
-# loaded_model = init()
+global loaded_model
+loaded_model = init()
 
 # User inputs a seed for model to generate predictions
 seed = input("Enter your seed sentence ")
