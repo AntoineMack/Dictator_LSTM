@@ -10,7 +10,7 @@ import pickle
 print('Starting Load')
 def init():
     filename = 'best_lstm_model.sav'
-    weights = "weights-improvement-50-3.9219.hdf5"
+    weights = input('Enter desired weights from training ')
     loaded_model = pickle.load(open(filename, 'rb'))
     loaded_model.load_weights(weights)
     loaded_model.compile(loss= 'categorical_crossentropy', optimizer='adam')
